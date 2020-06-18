@@ -113,10 +113,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_Decap_Sampler_Kick_mp3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dist/Decap_Sampler_Kick.mp3 */ "./dist/Decap_Sampler_Kick.mp3");
-/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_decap_snare_mp3__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./dist/decap_snare.mp3 */ "./dist/decap_snare.mp3");
-/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_clap_mp3__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./dist/clap.mp3 */ "./dist/clap.mp3");
-/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_rim_mp3__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./dist/rim.mp3 */ "./dist/rim.mp3");
+/* harmony import */ var _samples__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./samples */ "./samples.js");
 
 
 
@@ -131,16 +128,9 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 
 
+
 var render = react_dom__WEBPACK_IMPORTED_MODULE_8___default.a.render;
 var Component = react__WEBPACK_IMPORTED_MODULE_7___default.a.Component;
-
-
-
-
-var kickSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_Decap_Sampler_Kick_mp3__WEBPACK_IMPORTED_MODULE_9__["default"]);
-var snareSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_decap_snare_mp3__WEBPACK_IMPORTED_MODULE_10__["default"]);
-var clapSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_clap_mp3__WEBPACK_IMPORTED_MODULE_11__["default"]);
-var rimSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_rim_mp3__WEBPACK_IMPORTED_MODULE_12__["default"]);
 var app = document.querySelector('#app');
 
 var DrumPads = /*#__PURE__*/function (_Component) {
@@ -160,19 +150,91 @@ var DrumPads = /*#__PURE__*/function (_Component) {
     _this = _super.call.apply(_super, [this].concat(args));
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "kick", function () {
-      kickSample.play();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["kickSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["kickSample"].play();
     });
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "snare", function () {
-      snareSample.play();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["snareSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["snareSample"].play();
     });
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "clap", function () {
-      clapSample.play();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["clapSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["clapSample"].play();
     });
 
     _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "rim", function () {
-      rimSample.play();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["rimSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["rimSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "closedHat", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["closedHatSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["closedHatSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "openCloseHat", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["openCloseHatSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["openCloseHatSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "openHat", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["openHatSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["openHatSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "hatClose", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["openHatSample"].pause();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "shaker", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["shakerSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["shakerSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "keys1", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys2Sample"].pause();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys1Sample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys1Sample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "keys2", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys1Sample"].pause();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys2Sample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["keys2Sample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "bass1", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass2Sample"].pause();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass1Sample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass1Sample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "bass2", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass1Sample"].pause();
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass2Sample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["bass2Sample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "vox1", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["vox1Sample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["vox1Sample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "crash", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["crashSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["crashSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "cowBell", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["cowBellSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["cowBellSample"].play();
+    });
+
+    _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_6___default()(_babel_runtime_helpers_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2___default()(_this), "chimes", function () {
+      _samples__WEBPACK_IMPORTED_MODULE_9__["chimesSample"].currentTime = 0;
+      _samples__WEBPACK_IMPORTED_MODULE_9__["chimesSample"].play();
     });
 
     return _this;
@@ -184,41 +246,54 @@ var DrumPads = /*#__PURE__*/function (_Component) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumMachine"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
-        className: "drumPad"
-      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
-        onClick: this.kick
+        onMouseDown: this.vox1
+      }, "Vox 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.crash
+      }, "Crash"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.cowBell
+      }, "808 Cow Bell"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.chimes
+      }, "Chimes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.keys1
+      }, "Sample 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.keys2
+      }, "Sample 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.bass1
+      }, "Bass 1"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.bass2
+      }, "Bass 2"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.shaker
+      }, "Shaker"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.openCloseHat
+      }, "Open/Closed HH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.closedHat
+      }, "Closed HH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.openHat,
+        onMouseUp: this.hatClose
+      }, "Open HH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "drumPad",
+        onMouseDown: this.kick
       }, "Kick"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
-        onClick: this.rim
+        onMouseDown: this.rim
       }, "Rim"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
-        onClick: this.snare
+        onMouseDown: this.snare
       }, "Snare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
-        onClick: this.clap
+        onMouseDown: this.clap
       }, "Clap"));
     }
   }]);
@@ -242,7 +317,7 @@ var App = /*#__PURE__*/function (_Component2) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "container"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "MPC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(DrumPads, null));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h1", null, "drumMachine.JS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("hr", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(DrumPads, null));
     }
   }]);
 
@@ -250,6 +325,19 @@ var App = /*#__PURE__*/function (_Component2) {
 }(Component);
 
 render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(App, null), app);
+
+/***/ }),
+
+/***/ "./dist/808cowBell.mp3":
+/*!*****************************!*\
+  !*** ./dist/808cowBell.mp3 ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "b441277c39cba3fd5d78eef8c5b116a2.mp3");
 
 /***/ }),
 
@@ -266,6 +354,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./dist/bass1.mp3":
+/*!************************!*\
+  !*** ./dist/bass1.mp3 ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "82ca14813c49a2d761492236a939864a.mp3");
+
+/***/ }),
+
+/***/ "./dist/bass2.mp3":
+/*!************************!*\
+  !*** ./dist/bass2.mp3 ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "2665a3c26546dac51b6969b938d1bc76.mp3");
+
+/***/ }),
+
+/***/ "./dist/chimes.mp3":
+/*!*************************!*\
+  !*** ./dist/chimes.mp3 ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "343d06ba191f9cfe2a56a4bb244e1b5e.mp3");
+
+/***/ }),
+
 /***/ "./dist/clap.mp3":
 /*!***********************!*\
   !*** ./dist/clap.mp3 ***!
@@ -276,6 +403,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "6fa2802587f75dd14d6ba1f26d315623.mp3");
+
+/***/ }),
+
+/***/ "./dist/closed_hat.mp3":
+/*!*****************************!*\
+  !*** ./dist/closed_hat.mp3 ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e169d26831f3b445295249984d92c6e4.mp3");
+
+/***/ }),
+
+/***/ "./dist/crash.mp3":
+/*!************************!*\
+  !*** ./dist/crash.mp3 ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "08d7b2c3dc5209fe932f5fb2cfd3a4a8.mp3");
 
 /***/ }),
 
@@ -292,6 +445,58 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./dist/keys1.mp3":
+/*!************************!*\
+  !*** ./dist/keys1.mp3 ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "7299cdc7106df6eb635dbbf0341ac17a.mp3");
+
+/***/ }),
+
+/***/ "./dist/keys2.mp3":
+/*!************************!*\
+  !*** ./dist/keys2.mp3 ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "787e8a13e5a27d1613508f874a456a3b.mp3");
+
+/***/ }),
+
+/***/ "./dist/openCloseHat.mp3":
+/*!*******************************!*\
+  !*** ./dist/openCloseHat.mp3 ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "65e35d29a5bfe154eafe6f7717957535.mp3");
+
+/***/ }),
+
+/***/ "./dist/openHat.mp3":
+/*!**************************!*\
+  !*** ./dist/openHat.mp3 ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "c2875b63acc90c6208871f32cb7857de.mp3");
+
+/***/ }),
+
 /***/ "./dist/rim.mp3":
 /*!**********************!*\
   !*** ./dist/rim.mp3 ***!
@@ -302,6 +507,32 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "d75dd0d5e510304cfa7f4c3eda46d285.mp3");
+
+/***/ }),
+
+/***/ "./dist/shaker.mp3":
+/*!*************************!*\
+  !*** ./dist/shaker.mp3 ***!
+  \*************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "ff3b0983639fc26f5f2510b56e7a9e5c.mp3");
+
+/***/ }),
+
+/***/ "./dist/vox1.mp3":
+/*!***********************!*\
+  !*** ./dist/vox1.mp3 ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "b67ab3572ad66ff3279133c1be19f40c.mp3");
 
 /***/ }),
 
@@ -29021,6 +29252,83 @@ if (false) {} else {
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/scheduler-tracing.development.js */ "./node_modules/scheduler/cjs/scheduler-tracing.development.js");
 }
+
+
+/***/ }),
+
+/***/ "./samples.js":
+/*!********************!*\
+  !*** ./samples.js ***!
+  \********************/
+/*! exports provided: kickSample, snareSample, clapSample, rimSample, closedHatSample, openCloseHatSample, openHatSample, cowBellSample, keys1Sample, keys2Sample, bass1Sample, bass2Sample, vox1Sample, shakerSample, crashSample, chimesSample */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "kickSample", function() { return kickSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "snareSample", function() { return snareSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clapSample", function() { return clapSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rimSample", function() { return rimSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "closedHatSample", function() { return closedHatSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openCloseHatSample", function() { return openCloseHatSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "openHatSample", function() { return openHatSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cowBellSample", function() { return cowBellSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keys1Sample", function() { return keys1Sample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "keys2Sample", function() { return keys2Sample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bass1Sample", function() { return bass1Sample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bass2Sample", function() { return bass2Sample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "vox1Sample", function() { return vox1Sample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "shakerSample", function() { return shakerSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "crashSample", function() { return crashSample; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "chimesSample", function() { return chimesSample; });
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_Decap_Sampler_Kick_mp3__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./dist/Decap_Sampler_Kick.mp3 */ "./dist/Decap_Sampler_Kick.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_decap_snare_mp3__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dist/decap_snare.mp3 */ "./dist/decap_snare.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_clap_mp3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dist/clap.mp3 */ "./dist/clap.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_rim_mp3__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dist/rim.mp3 */ "./dist/rim.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_closed_hat_mp3__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dist/closed_hat.mp3 */ "./dist/closed_hat.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_openCloseHat_mp3__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dist/openCloseHat.mp3 */ "./dist/openCloseHat.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_openHat_mp3__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./dist/openHat.mp3 */ "./dist/openHat.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_808cowBell_mp3__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dist/808cowBell.mp3 */ "./dist/808cowBell.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_keys1_mp3__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./dist/keys1.mp3 */ "./dist/keys1.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_keys2_mp3__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./dist/keys2.mp3 */ "./dist/keys2.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_bass1_mp3__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./dist/bass1.mp3 */ "./dist/bass1.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_bass2_mp3__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./dist/bass2.mp3 */ "./dist/bass2.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_vox1_mp3__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./dist/vox1.mp3 */ "./dist/vox1.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_shaker_mp3__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./dist/shaker.mp3 */ "./dist/shaker.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_crash_mp3__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./dist/crash.mp3 */ "./dist/crash.mp3");
+/* harmony import */ var _Users_Nickcarr_fullstack_practice_drum_machine_dist_chimes_mp3__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./dist/chimes.mp3 */ "./dist/chimes.mp3");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var kickSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_Decap_Sampler_Kick_mp3__WEBPACK_IMPORTED_MODULE_0__["default"]);
+var snareSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_decap_snare_mp3__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var clapSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_clap_mp3__WEBPACK_IMPORTED_MODULE_2__["default"]);
+var rimSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_rim_mp3__WEBPACK_IMPORTED_MODULE_3__["default"]);
+var closedHatSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_closed_hat_mp3__WEBPACK_IMPORTED_MODULE_4__["default"]);
+var openCloseHatSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_openCloseHat_mp3__WEBPACK_IMPORTED_MODULE_5__["default"]);
+var openHatSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_openHat_mp3__WEBPACK_IMPORTED_MODULE_6__["default"]);
+var cowBellSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_808cowBell_mp3__WEBPACK_IMPORTED_MODULE_7__["default"]);
+var keys1Sample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_keys1_mp3__WEBPACK_IMPORTED_MODULE_8__["default"]);
+var keys2Sample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_keys2_mp3__WEBPACK_IMPORTED_MODULE_9__["default"]);
+var bass1Sample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_bass1_mp3__WEBPACK_IMPORTED_MODULE_10__["default"]);
+var bass2Sample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_bass2_mp3__WEBPACK_IMPORTED_MODULE_11__["default"]);
+var vox1Sample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_vox1_mp3__WEBPACK_IMPORTED_MODULE_12__["default"]);
+var shakerSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_shaker_mp3__WEBPACK_IMPORTED_MODULE_13__["default"]);
+var crashSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_crash_mp3__WEBPACK_IMPORTED_MODULE_14__["default"]);
+var chimesSample = new Audio(_Users_Nickcarr_fullstack_practice_drum_machine_dist_chimes_mp3__WEBPACK_IMPORTED_MODULE_15__["default"]);
 
 
 /***/ })
