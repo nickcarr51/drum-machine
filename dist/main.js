@@ -337,7 +337,7 @@ render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "b441277c39cba3fd5d78eef8c5b116a2.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/808cowBell.b441277c39cba3fd5d78eef8c5b116a2.mp3");
 
 /***/ }),
 
@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "38b46cf14f3dfe97655f665d95d8bf74.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/Decap_Sampler_Kick.38b46cf14f3dfe97655f665d95d8bf74.mp3");
 
 /***/ }),
 
@@ -363,7 +363,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "82ca14813c49a2d761492236a939864a.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/bass1.82ca14813c49a2d761492236a939864a.mp3");
 
 /***/ }),
 
@@ -376,7 +376,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "2665a3c26546dac51b6969b938d1bc76.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/bass2.2665a3c26546dac51b6969b938d1bc76.mp3");
 
 /***/ }),
 
@@ -389,7 +389,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "343d06ba191f9cfe2a56a4bb244e1b5e.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/chimes.343d06ba191f9cfe2a56a4bb244e1b5e.mp3");
 
 /***/ }),
 
@@ -402,7 +402,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "6fa2802587f75dd14d6ba1f26d315623.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/clap.6fa2802587f75dd14d6ba1f26d315623.mp3");
 
 /***/ }),
 
@@ -415,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "e169d26831f3b445295249984d92c6e4.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/closed_hat.e169d26831f3b445295249984d92c6e4.mp3");
 
 /***/ }),
 
@@ -428,7 +428,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "08d7b2c3dc5209fe932f5fb2cfd3a4a8.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/crash.08d7b2c3dc5209fe932f5fb2cfd3a4a8.mp3");
 
 /***/ }),
 
@@ -441,7 +441,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "29472595320aafadda040ff4b349a813.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/decap_snare.29472595320aafadda040ff4b349a813.mp3");
 
 /***/ }),
 
@@ -454,7 +454,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "7299cdc7106df6eb635dbbf0341ac17a.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/keys1.7299cdc7106df6eb635dbbf0341ac17a.mp3");
 
 /***/ }),
 
@@ -467,7 +467,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "787e8a13e5a27d1613508f874a456a3b.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/keys2.787e8a13e5a27d1613508f874a456a3b.mp3");
 
 /***/ }),
 
@@ -480,7 +480,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "65e35d29a5bfe154eafe6f7717957535.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/openCloseHat.65e35d29a5bfe154eafe6f7717957535.mp3");
 
 /***/ }),
 
@@ -493,7 +493,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "c2875b63acc90c6208871f32cb7857de.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/openHat.c2875b63acc90c6208871f32cb7857de.mp3");
 
 /***/ }),
 
@@ -506,7 +506,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "d75dd0d5e510304cfa7f4c3eda46d285.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/rim.d75dd0d5e510304cfa7f4c3eda46d285.mp3");
 
 /***/ }),
 
@@ -519,7 +519,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "ff3b0983639fc26f5f2510b56e7a9e5c.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/shaker.ff3b0983639fc26f5f2510b56e7a9e5c.mp3");
 
 /***/ }),
 
@@ -532,7 +532,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "b67ab3572ad66ff3279133c1be19f40c.mp3");
+/* harmony default export */ __webpack_exports__["default"] = ("assets/audio/vox1.b67ab3572ad66ff3279133c1be19f40c.mp3");
 
 /***/ }),
 

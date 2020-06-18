@@ -13,17 +13,17 @@ module.exports = {
                 },
                 exclude: /(node_modules)/,
             },
-            // {
-            //     test: /\.(mp3|wav|wma|ogg)$/,
-            //     use: {
-            //       loader: 'file-loader',
-            //       options: {
-            //         name: '[name].[contenthash].[ext]',
-            //         outputPath: 'assets/audio/',
-            //         publicPath: 'assets/audio/'
-            //       }
-            //     }
-
+            {
+                test: /\.(mp3|wav|wma|ogg)$/,
+                use: {
+                  loader: 'file-loader',
+                  options: {
+                    name: '[name].[contenthash].[ext]',
+                    outputPath: 'assets/audio/',
+                    publicPath: 'assets/audio/'
+                  }
+                },
+            },
         ],
     },
 };
