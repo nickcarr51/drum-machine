@@ -95,9 +95,9 @@ class DrumPads extends Component {
                 <div className='drumPad' onMouseDown={ this.closedHat }>Closed HH</div>
                 <div className='drumPad' onMouseDown={ this.openHat } onMouseUp={ this.hatClose }>Open HH</div>
                 <div className='drumPad' onMouseDown={ this.kick }>Kick</div>
-                <div className='drumPad' onMouseDown={ this.rim }>Rim</div>
-                <div className='drumPad' onMouseDown={ this.snare }>Snare</div>
-                <div className='drumPad' onMouseDown={ this.clap }>Clap</div>
+                <div className='drumPad' onTouchStart={ this.rim } onMouseDown={ this.rim }>Rim</div>
+                <div className='drumPad' onTouchStart={ this.snare } onMouseDown={ this.snare }>Snare</div>
+                <div className='drumPad' onTouchStart={ this.clap } onMouseDown={ this.clap }>Clap</div>
             </div>
         )
     }

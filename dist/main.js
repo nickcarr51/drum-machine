@@ -287,12 +287,15 @@ var DrumPads = /*#__PURE__*/function (_Component) {
         onMouseDown: this.kick
       }, "Kick"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
+        onTouchStart: this.rim,
         onMouseDown: this.rim
       }, "Rim"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
+        onTouchStart: this.snare,
         onMouseDown: this.snare
       }, "Snare"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "drumPad",
+        onTouchStart: this.clap,
         onMouseDown: this.clap
       }, "Clap"));
     }
