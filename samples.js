@@ -4,26 +4,24 @@ const aws = require('aws-sdk');
 let s3 = new aws.S3({
     accessKeyId: process.env.AWS_ACCESS_KEY_ID,
     secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY
-    // accessKeyId: process.env.S3_KEY,
-    // secretAccessKey: process.env.S3_SECRET
-  });
-
-import kick from 's3://drummachinev1/Decap_Sampler_Kick.mp3';
-import snare from 's3://drummachinev1/decap_snare.mp3';
-import clap from 's3://drummachinev1/clap.mp3'
-import rim from 's3://drummachinev1/rim.mp3'
-import closedHat from 's3://drummachinev1/closed_hat.mp3';
-import openCloseHat from 's3://drummachinev1/openCloseHat.mp3';
-import openHat from 's3://drummachinev1/openHat.mp3';
-import cowBell from 's3://drummachinev1/808cowBell.mp3';
-import keys1 from 's3://drummachinev1/keys1.mp3';
-import keys2 from 's3://drummachinev1/keys2.mp3';
-import bass1 from 's3://drummachinev1/bass1.mp3';
-import bass2 from 's3://drummachinev1/bass2.mp3';
-import vox1 from 's3://drummachinev1/vox1.mp3';
-import shaker from 's3://drummachinev1/shaker.mp3';
-import crash from 's3://drummachinev1/crash.mp3';
-import chimes from 's3://drummachinev1/chimes.mp3';
+});
+console.log(s3);
+import kick from 'http://s3://drummachinev1/Decap_Sampler_Kick.mp3';
+import snare from 'http://s3://drummachinev1/decap_snare.mp3';
+import clap from 'http://s3://drummachinev1/clap.mp3'
+import rim from 'http://s3://drummachinev1/rim.mp3'
+import closedHat from 'http://s3://drummachinev1/closed_hat.mp3';
+import openCloseHat from 'http://s3://drummachinev1/openCloseHat.mp3';
+import openHat from 'http://s3://drummachinev1/openHat.mp3';
+import cowBell from 'http://s3://drummachinev1/808cowBell.mp3';
+import keys1 from 'http://s3://drummachinev1/keys1.mp3';
+import keys2 from 'http://s3://drummachinev1/keys2.mp3';
+import bass1 from 'http://s3://drummachinev1/bass1.mp3';
+import bass2 from 'http://s3://drummachinev1/bass2.mp3';
+import vox1 from 'http://s3://drummachinev1/vox1.mp3';
+import shaker from 'http://s3://drummachinev1/shaker.mp3';
+import crash from 'http://s3://drummachinev1/crash.mp3';
+import chimes from 'http://s3://drummachinev1/chimes.mp3';
 const kickSample = new Audio(kick);
 const snareSample = new Audio(snare);
 const clapSample = new Audio(clap);
@@ -79,3 +77,7 @@ export {
 // import shaker from '/Users/Nickcarr/fullstack/practice/drum-machine/dist/shaker.mp3';
 // import crash from '/Users/Nickcarr/fullstack/practice/drum-machine/dist/crash.mp3';
 // import chimes from '/Users/Nickcarr/fullstack/practice/drum-machine/dist/chimes.mp3';
+
+
+    // accessKeyId: process.env.S3_KEY,
+    // secretAccessKey: process.env.S3_SECRET
